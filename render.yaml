@@ -1,6 +1,7 @@
 services:
   - type: web
     name: patients-analyzer-backend
+    plan: free
     runtime: node
     buildCommand: npm install
     startCommand: node server.js
