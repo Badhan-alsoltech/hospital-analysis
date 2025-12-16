@@ -49,10 +49,12 @@ const BedSchema = new mongoose.Schema({
 // Vital Schema
 const VitalSchema = new mongoose.Schema({
     bedId: String,
+    patientId: String,
     heartRate: Number,
     spo2: Number,
     temperature: Number,
     respiration: Number,
+    bp: String, // e.g. "120/80"
     timestamp: { type: Date, default: Date.now }
 });
 
